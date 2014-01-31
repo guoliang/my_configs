@@ -1,0 +1,33 @@
+#escape ^Bx
+
+#ronny
+startup_message off
+defscrollback 100000
+termcapinfo xterm ti@:te@
+termcapinfo xterm-color ti@:te@
+
+
+# add an easy key to renumber the current window
+bind \# colon "number "
+
+## 'k' to kill, 'r' to rerun command
+#zombie kr onerror
+zombie kr
+
+## vertical split!!!
+#bind 'V' split -v
+
+# use scrollbar
+#termcapinfo xterm ti@:te@
+#termcapinfo xterm-color ti@:te@
+
+shelltitle '$ |bash'
+
+# blue
+#caption always '%?%F%{.BW}%:%{.bB}%?%2n %f%t%? [%h]%? %?%{..R}%u%? %=%?%{..Y}%H%?%-0<'
+hardstatus alwayslastline "%{.bw}%-Lw%{..W}%n%f* %t%{-}%+Lw%L= %=a %{..W}[%d %c] %?%{.rY}%H%?%-0<"
+# cyan
+#caption always '%?%F%{.Ck}%:%{.cK}%?%2n %f%t%? [%h]%? %?%{..R}%u%? %=%?%{..b}%H%?%-0<'
+#hardstatus alwayslastline "%{.cb}%-Lw%{..W}%n%f* %t%{-}%+Lw%L= %=a %{..W}[%d %c] %?%{.BW}%H%?%-0<"
+
+shell /bin/bash
