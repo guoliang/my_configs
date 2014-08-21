@@ -78,6 +78,8 @@ let mapleader = ","
 " Fast saving
 nmap <leader> :w!<cr>
 
+""" Remove white space
+map gu :%s/\s\+$//e<enter> :w<enter>
 
 """ Misc
 set omnifunc=syntaxcomplete#Complete
