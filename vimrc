@@ -43,6 +43,7 @@ set backspace=eol,start,indent  "Make backspace work as normal
 set autoindent			"Copy indent from current line to new line
 set smartindent
 
+set expandtab  "Use the appropriate number of spaces to insert a <Tab>
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
