@@ -99,3 +99,6 @@ autocmd BufWinLeave * call clearmatches()
 "Extra whitespace removed when saving ruby files
 autocmd BufWritePre *.rb :%s/\s\+$//e
 
+"GIT auto line wrap
+au FileType gitcommit setlocal tw=72
+
