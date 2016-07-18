@@ -4,10 +4,6 @@
   co = checkout
   ci = commit
 
-[user]
-  name = Leung Wong
-  email = wguoliang1113@gmail.com
-
 [core]
   editor = vim
 
@@ -33,3 +29,4 @@
 [merge]
   tool = vimdiff
   conflictstyle = diff3
+
